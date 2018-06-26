@@ -38,8 +38,12 @@ nav a img{
 .home-icon{
     float: left;
 }
+main{
+    display:inline-block;
+    background-color: darkcyan;
+    width: 100%;
+}
 footer{
+    display:inline-block;
     border-top: 1px solid salmon;
-
-
 }

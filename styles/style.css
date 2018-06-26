@@ -1,0 +1,39 @@
+body{
+    margin: auto;
+}
+header{
+    
+    text-align: center;
+    width: 100%;
+    min-height: 500px;
+    background: url(https://huckberry.imgix.net/uploads/post/image/1664/hero_Huckberry_Southern-Gentleman_Tinder-to-Sprinter_header.jpg) no-repeat;
+    background-size: cover;
+}
+header h1{
+    justify-content: center
+
+}
+
+nav{
+    display:block;
+    top:0;
+    position:fixed;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    background-color: aqua;
+}
+nav a img{
+    float: right;
+    margin-right: 20px;
+    width: 60px;
+}
+.home-icon{
+    float: left;
+}
+
+
+.clearfix:after{
+    content: "";
+    clear:both;
+}

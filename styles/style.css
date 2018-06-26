@@ -8,6 +8,7 @@ body{
 }
 header{
     
+    display: inline-block;
     text-align: center;
     width: 100%;
     min-height: 500px;
@@ -16,21 +17,26 @@ header{
     border-bottom: 1px solid salmon;
     margin-bottom: 0%;
 }
+header img{
+    width: 300px;
+} 
 header h1{
-    justify-content: center
-
+    color: #ffd711;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 350%;
 }
 
-nav{
+.nav{
+    margin: 0 auto;
     display:block;
-    top:0;
-    position:fixed;
+    top:440px;
+    position: absolute;
     width: 100%;
     height: auto;
     border-radius: 3px;
     background-color: aqua;
 }
-nav a img{
+.nav a img{
     float: right;
     margin-right: 20px;
     width: 60px;
@@ -46,4 +52,33 @@ main{
 footer{
     display:inline-block;
     border-top: 1px solid salmon;
+}
+.hidden{
+    display:none;
+}
+.recipe{
+    border: 2px solid brown;
+    margin: 0% 1%;
+    border-radius: 5px;
+}
+.recipe img{
+    width: 100px;
+    margin: 1%;
+    border: 2px solid brown;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid black;
+    background: white;
+    border-radius: 3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+.button:hover{
+    background: gray;
+}
+.recipe .button{
+    float: right;
+    
 }

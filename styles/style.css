@@ -1,6 +1,11 @@
 body{
     margin: auto;
 }
+
+.clearfix:after{
+    content: "";
+    clear:both;
+}
 header{
     
     text-align: center;
@@ -8,6 +13,8 @@ header{
     min-height: 500px;
     background: url(https://huckberry.imgix.net/uploads/post/image/1664/hero_Huckberry_Southern-Gentleman_Tinder-to-Sprinter_header.jpg) no-repeat;
     background-size: cover;
+    border-bottom: 1px solid salmon;
+    margin-bottom: 0%;
 }
 header h1{
     justify-content: center
@@ -31,9 +38,8 @@ nav a img{
 .home-icon{
     float: left;
 }
+footer{
+    border-top: 1px solid salmon;
 
 
-.clearfix:after{
-    content: "";
-    clear:both;
 }

@@ -19,17 +19,23 @@ $(document).ready(function () {
     });
     $('.recipe-btn').on('click', function () {
         var $this = $(this);
-        
+        var $recipe = $(this).parent().parent();
         if ($this.html() === 'Show') {
             $this.html('Hide');
-            $(this).parent().children('.recipe-text').css({
+            $recipe.css({
+                'width':'60%'
+            });
+            $recipe.children('.recipe-text').css({
                 'display': 'inline-block'
             });;
         } else {
             $this.html('Show');
-            
-            $(this).parent().children('.recipe-text').css({
-                'display': ''
+            $recipe.css({
+                'width':''
+            });
+            $recipe.children('.recipe-text').css({
+                'display': '', 
+                
             })
         }
     });

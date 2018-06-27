@@ -36,7 +36,7 @@ header h1{
     width: 100%;
     height: auto;
     border-radius: 3px;
-    background-color: aqua;
+    background-color: rgb(27, 247, 170);
 }
 .nav a img{
     float: right;
@@ -48,7 +48,7 @@ header h1{
 }
 main{
     display:inline-block;
-    background-color: darkcyan;
+    background-color: rgb(245, 247, 244);
     width: 100%;
 }
 footer{
@@ -59,7 +59,7 @@ footer{
     display:none;
 }
 .recipe{
-    border: 2px solid brown;
+    background-color: rgb(219, 224, 217);
     margin: 0% 1%;
     border-radius: 5px;
 }
@@ -67,6 +67,7 @@ footer{
     width: 100px;
     margin: 1%;
     border: 2px solid brown;
+    transition: transform .2s;
 }
 .button{
     display: inline-block;
@@ -80,16 +81,21 @@ footer{
 .button:hover{
     background: gray;
 }
-.recipe .button{
-    float: right;
-    
+.recipe > div{
+    display: block;
+    text-align: right;
 }
 .recipe-container h1{
     text-align: center;
 }
 .recipe{
-    width: 20%; 
+    text-align: center;
+    padding: 7px;
+    width: 20%;
 }
 .recipe .recipe-text{
     display: none;
+}
+.zoom:hover {
+    transform: scale(1.5);
 }

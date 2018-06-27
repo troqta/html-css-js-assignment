@@ -17,26 +17,28 @@ $(document).ready(function () {
             })
         }
     });
+    var recipeWidth = '20%';
     $('.recipe-btn').on('click', function () {
         var $this = $(this);
         var $recipe = $(this).parent().parent();
+        console.log($recipe.css('width'));
         if ($this.html() === 'Show') {
             $this.html('Hide');
-            $recipe.css({
-                'width':'60%'
-            });
-            $recipe.children('.recipe-text').css({
-                'display': 'inline-block'
-            });;
+            
+            $recipe.children('.recipe-text').fadeIn();
+            // $recipe.css({
+            //     'width':'60%'
+            // });
+            
+            $recipe.animate({width:'60%'}, 300);
         } else {
             $this.html('Show');
-            $recipe.css({
-                'width':''
+            
+            $recipe.children('.recipe-text').fadeOut('fast', function(){
+                $recipe.animate({width: recipeWidth}, 300)
             });
-            $recipe.children('.recipe-text').css({
-                'display': '', 
-                
-            })
+          
+            
         }
     });
 });

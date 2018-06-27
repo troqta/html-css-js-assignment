@@ -51,14 +51,14 @@ main{
     background-color: rgb(245, 247, 244);
     width: 100%;
 }
-footer{
-    display:inline-block;
-    border-top: 1px solid salmon;
-}
+
 .hidden{
     display:none;
 }
 .recipe{
+    text-align: center;
+    padding: 7px;
+    width: 20%;
     background-color: rgb(219, 224, 217);
     margin: 0% 1%;
     border-radius: 5px;
@@ -88,14 +88,22 @@ footer{
 .recipe-container h1{
     text-align: center;
 }
-.recipe{
-    text-align: center;
-    padding: 7px;
-    width: 20%;
-}
+
 .recipe .recipe-text{
     display: none;
 }
 .zoom:hover {
     transform: scale(1.5);
+}
+footer{
+    display:inline-block;
+    border-top: 1px solid salmon;
+    min-height: 80px;
+    text-align: right;
+    width: 100%;
+    background-color: rgb(219, 224, 217);
+}
+footer p {
+    margin-top: 30px;
+    padding-right: 2%;
 }

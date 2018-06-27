@@ -6,12 +6,14 @@ $(document).ready(function () {
         if (totalH < vPos) {
             $('#stickyNav').css({
                 'position': 'fixed',
-                'top': 0
+                'top': 0,
+                'bottom' : 'auto'
             })
         } else {
             $('#stickyNav').css({
                 'position': 'absolute',
-                'top': ''
+                'top': '',
+                'bottom': 0
             })
         }
     });

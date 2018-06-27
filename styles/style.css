@@ -12,6 +12,7 @@ header{
     text-align: center;
     width: 100%;
     min-height: 500px;
+    position: relative;
     background: url(https://huckberry.imgix.net/uploads/post/image/1664/hero_Huckberry_Southern-Gentleman_Tinder-to-Sprinter_header.jpg) no-repeat;
     background-size: cover;
     border-bottom: 1px solid salmon;
@@ -29,7 +30,8 @@ header h1{
 .nav{
     margin: 0 auto;
     display:block;
-    top:440px;
+    /* top:440px; */
+    bottom: 0;
     position: absolute;
     width: 100%;
     height: auto;

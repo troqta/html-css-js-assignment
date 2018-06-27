@@ -82,3 +82,12 @@ footer{
     float: right;
     
 }
+.recipe-container h1{
+    text-align: center;
+}
+.recipe{
+    width: 20%; 
+}
+.recipe .recipe-text{
+    display: none;
+}

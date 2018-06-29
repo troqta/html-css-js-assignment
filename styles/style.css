@@ -144,5 +144,6 @@ footer p {
     
 }
 #create-recipe-form{
+    display:none;
     text-align: center;
 }

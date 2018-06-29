@@ -53,10 +53,12 @@ $(document).ready(function () {
         }
         else{
         authorName = $('#author-box').val();
-        console.log(authorName);
         $('#header-welcome').html('Welcome, '+authorName+'!');
         $('#welcome-page').fadeOut('fast', function(){
             $('body').css({'overflow' : 'auto'});
+            if(authorName!= 'Guest'){
+                $('#create-recipe-form').fadeIn('fast');
+            }
         });
          }
     });
@@ -86,8 +88,16 @@ $(document).ready(function () {
         recipe.append(text);
         recipe.append(buttonDiv);
  
-
+        $(this).trigger('reset');
          $('#recipe-container').append(recipe);
+
+     });
+     $('#logout').on('click', function(){
+         authorName = 'Guest' ;
+         $('#create-recipe-form').fadeOut('fast');
+         $('#header-welcome').html('Welcome!');
+         $('#welcome-page').fadeIn('fast');
+         $('body').css({'overflow':'hidden'});
 
      });
 });

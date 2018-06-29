@@ -38,7 +38,7 @@
     <main>
         <div id="welcome-page">
             <div id="welcome-container">
-                <form action="POST">
+                <form>
                     <input id="author-box" type="text" placeholder="Guest">
                     <div>
                         <br>
@@ -49,9 +49,6 @@
             </div>
         </div>
         <section id="recipe-container">
-            <h1> Recipes: </h1>
-            <div>
-                <div>
                     <article class="recipe" id="spaghetti">
                         <img class="zoom" src="https://st2.depositphotos.com/4778423/7297/i/950/depositphotos_72978399-stock-photo-pasta-spageti-olive-oil-and.jpg">
                         <h2>Spaghetti</h2>
@@ -80,7 +77,7 @@
                             </p>
                         </p>
                         <div>
-                            <!-- <h3 class="recipe-author" >Author: God</h3> -->
+                            <h3 class="recipe-author" >Author: God</h3>
                             <a class="button recipe-btn" href="#!">Show</a>
                         </div>
                     </article>
@@ -112,12 +109,10 @@
                             </p>
                         </p>
                         <div>
-                            <!-- <h3 class="recipe-author" >Author: God</h3> -->
+                            <h3 class="recipe-author" >Author: God</h3>
                             <a class="button recipe-btn" href="#!">Show</a>
                         </div>
                     </article>
-                </div>
-            </div>
         </section>
         <h1>test</h1>
         <h1>test</h1>
@@ -147,6 +142,17 @@
         <h1>test</h1>
         <h1>test</h1>
         <h1>test</h1>
+
+        <form id="create-recipe-form">
+            <div>
+            <input id="form-name" type="text" placeholder="Name of recipe" required="true">
+            </div>
+            <div>
+            <input id="form-img" type="text" placeholder="Link to image of article" required="true">
+            </div>
+            <textarea  id="form-text" cols="30" rows="5" placeholder="Recipe text"></textarea>
+            <input class="button" type="submit"/>
+        </form>
     </main>
 
     <footer>

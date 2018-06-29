@@ -63,7 +63,8 @@ main{
     padding: 7px;
     width: 20%;
     background-color: rgb(219, 224, 217);
-    margin: 0% 1%;
+    margin: 1% 1%;
+    
     border-radius: 5px;
 }
 .recipe img{
@@ -115,10 +116,11 @@ footer p {
     text-align: center;
     height: 20%;
 }
-/* .recipe-author{
+ .recipe-author{
     display: inline-block;
     text-align: left;
-} */
+    margin-right: 30%;
+} 
 #welcome-page{
     top:0;
     bottom: 0;
@@ -140,4 +142,7 @@ footer p {
     padding: 20px;
     border-radius: 5px;
     
+}
+#create-recipe-form{
+    text-align: center;
 }

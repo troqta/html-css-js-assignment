@@ -29,7 +29,7 @@ $(document).ready(function () {
     }
     var recipeWidth = '20%';
     var showRecipeWidth = '60%';
-    $('.recipe-btn').on('click', function () {
+    $('#recipe-container').on('click', '.recipe-btn', function () {
         var $this = $(this);
         var $recipe = $(this).parent().parent();
         if ($this.html() === 'Show') {
@@ -69,6 +69,26 @@ $(document).ready(function () {
     });
     $(window).on('beforeunload', function() {
         $(window).scrollTop(0);
+     });
+
+     $('#create-recipe-form').submit(function(){
+        var recipe = $('<article />', {'class': 'recipe'});
+        var name = $('<h2 />').html($('#form-name').val());
+        var imgSrc = $('<img />', {'class': 'zoom'}).attr('src', $('#form-img').val());
+        var text = $('<p />', {'class': 'recipe-text'}).html($('#form-text').val());
+        var buttonDiv = $('<div />');
+        var author = $('<h3 />', {'class':'recipe-author'}).html('Author: '+authorName);
+        var button = $('<a />', {'class':'button recipe-btn', 'href':'#!'}).html('Show');
+        buttonDiv.append(author);
+        buttonDiv.append(button);
+        recipe.append(imgSrc);
+        recipe.append(name);
+        recipe.append(text);
+        recipe.append(buttonDiv);
+ 
+
+         $('#recipe-container').append(recipe);
+
      });
 });
 

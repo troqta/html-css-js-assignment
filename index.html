@@ -25,17 +25,29 @@
             </a>
         </div>
         <div>
-            <div class= "header-stuff">
-            <img src="https://cdn.pixabay.com/photo/2017/06/13/22/31/logo-2400338_960_720.png">
-            <h1>
-                Welcome to Narnia!
-            </h1>
-        </div>
+            <div class="header-stuff">
+                <img src="https://cdn.pixabay.com/photo/2017/06/13/22/31/logo-2400338_960_720.png">
+                <h1 id="header-welcome">
+                    Welcome!
+                </h1>
+            </div>
             <!-- <img src="https://huckberry.imgix.net/uploads/post/image/1664/hero_Huckberry_Southern-Gentleman_Tinder-to-Sprinter_header.jpg" > -->
         </div>
     </header>
 
     <main>
+        <div id="welcome-page">
+            <div id="welcome-container">
+                <form action="POST">
+                    <input id="author-box" type="text" placeholder="Guest">
+                    <div>
+                        <br>
+                    <a class="button" id="guest-enter-btn" href="#">Continue as guest</a>
+                    <a class="button" id="enter-btn" href="#">Enter</a>
+                    </div>
+                </form>
+            </div>
+        </div>
         <section id="recipe-container">
             <h1> Recipes: </h1>
             <div>
@@ -68,6 +80,39 @@
                             </p>
                         </p>
                         <div>
+                            <!-- <h3 class="recipe-author" >Author: God</h3> -->
+                            <a class="button recipe-btn" href="#!">Show</a>
+                        </div>
+                    </article>
+                    <article class="recipe" id="cheesecake">
+                        <img class="zoom" src="https://www.seriouseats.com/recipes/images/2017/06/20170526-no-bake-cheesecake-vicky-wasik-18-1500x1125.jpg">
+                        <h2>CheeseCake</h2>
+                        <p class="recipe-text">
+                            <strong>Ingredients: </strong>
+                            sourdough bread 100g, crusts removed olive oil 4 tbsp chorizo 50g chunk, cut into tiny dice rosemary chopped to make 2 tsp
+                            wholewheat spaghetti 150g garlic 2 cloves, finely chopped dried chilli flakes ½ tsp parmesan
+                            30g, finely grated Method
+                            <p class="recipe-text">
+                                <strong> STEP 1: </strong>
+                                Put the sourdough in a food processor and whizz to rough breadcrumbs.
+                            </p>
+                            <p class="recipe-text">
+                                <strong>STEP 2:</strong>
+
+                                Heat 2 tbsp of olive oil in a non-stick frying pan and add the chorizo. Fry for 3 minutes then tip in the breadcrumbs and
+                                cook until crisp but not too dark. Stir in the rosemary and cook for a minute then take off
+                                the heat and season. Tip onto kitchen paper.
+                            </p>
+                            <p class="recipe-text">
+                                <strong>STEP 3:</strong>
+                                Cook the spaghetti following pack instructions. Heat another 2 tbsp of olive oil in a pan and sizzle the garlic and chilli
+                                for 2 minutes. Drain the pasta (keep a cup of the cooking water) then tip into the pan with
+                                the garlic-chilli oil and toss. Add a good splash of cooking water and the parmesan, and
+                                toss again. Serve sprinkled with the pangritata.
+                            </p>
+                        </p>
+                        <div>
+                            <!-- <h3 class="recipe-author" >Author: God</h3> -->
                             <a class="button recipe-btn" href="#!">Show</a>
                         </div>
                     </article>

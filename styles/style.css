@@ -28,6 +28,7 @@ header h1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 300%;
     background: rgba(0,0,0,0.45);
+    border-radius: 3px;
 }
 
 .nav{
@@ -35,6 +36,7 @@ header h1{
     display:block;
     /* top:440px; */
     bottom: 0;
+    z-index: 10;
     position: absolute;
     width: 100%;
     height: auto;
@@ -177,6 +179,8 @@ footer p {
     
 }
 #create-recipe-form{
+    margin: auto;
+    text-align: center;
     display:none;
     padding: 20px;
     width: 50%;

@@ -20,6 +20,8 @@ $(document).ready(function () {
     });
     $('#recipe-container').on('click', '.recipe-btn', function () {
         $(this).parents('.recipe').toggleClass('recipe-open');
+        $(this).parents('.recipe').toggleClass('zoom');
+
         $(this).parents('.recipe').find('.button').toggleClass('hidden');
     });
     var authorName;

@@ -18,32 +18,9 @@ $(document).ready(function () {
             })
         }
     });
-    var showRecipe = function($recipe){
-        $recipe.children('.recipe-text').fadeIn();
-        $recipe.animate({width:showRecipeWidth}, 300);
-    }
-    var hideRecipe = function($recipe){
-        $recipe.children('.recipe-text').fadeOut('fast', function(){
-            $recipe.animate({width: recipeWidth}, 300)
-        });
-    }
-    var recipeWidth = '20%';
-    var showRecipeWidth = '60%';
     $('#recipe-container').on('click', '.recipe-btn', function () {
-        var $this = $(this);
-        var $recipe = $(this).parent().parent();
-        if ($this.html() === 'Show') {
-            $this.html('Hide');
-            showRecipe($recipe);
-            // $recipe.children('.recipe-text').fadeIn();
-            // $recipe.animate({width:showRecipeWidth}, 300);
-        } else {
-            $this.html('Show');
-            hideRecipe($recipe);
-            // $recipe.children('.recipe-text').fadeOut('fast', function(){
-            //     $recipe.animate({width: recipeWidth}, 300)
-            // });  
-        }
+        $(this).parents('.recipe').toggleClass('recipe-open');
+        $(this).parents('.recipe').find('.button').toggleClass('hidden');
     });
     var authorName;
 
@@ -90,6 +67,7 @@ $(document).ready(function () {
  
         $(this).trigger('reset');
          $('#recipe-container').append(recipe);
+         return false;
 
      });
      $('#logout').on('click', function(){

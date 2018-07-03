@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $('.home-icon').on('click', function(){
+        $('html').animate({ scrollTop: 0 }, 'slow'); return true; 
+    });
+
     var totalH = $('#stickyNav').offset().top;
     $(window).bind('scroll', function () {
         var vPos = $(window).scrollTop();

@@ -98,7 +98,7 @@ main h1{
     transition: 0.2s ease-out all;
 }
 .recipe-open { 
-    width: 60%;
+    width: 95%;
 }
 .recipe-open .recipe-text {
     width: 100%;

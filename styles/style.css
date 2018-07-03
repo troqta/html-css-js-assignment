@@ -4,6 +4,7 @@ body{
     font-family: sans-serif;
 }
 
+
 .clearfix:after{
     content: "";
     clear:both;
@@ -55,6 +56,9 @@ main{
     display:inline-block;
     background-color: rgb(245, 247, 244);
     width: 100%;
+}
+main h1{
+    text-align: center;
 }
 
 .hidden{
@@ -114,6 +118,7 @@ main{
     overflow: hidden;
 }
 .button{
+    padding: 5px;
     display: inline-block;
     text-decoration: none;
     border: 2px solid black;
@@ -162,20 +167,28 @@ footer p {
     width: 100%;
     position: absolute;
     z-index: 10;
-    background-color: rgba(255, 255, 0, 0.3);
+    background-color: rgba(95, 95, 95, 0.6);
     text-align: center;
     opacity: 50%;
 }
-#welcome-container{
+#welcome-container{ 
     top: 50%;
     display: inline-block;
     position: relative;
     text-align: center;
 }
+#welcome-container h3{
+    display: inline-block;
+    text-align: left;
+}
+input[type=text]{
+    min-height: 30px;
+}
 #welcome-container > form{
-    background: rgba(255, 165, 0, 0.5);
-    padding: 20px;
+    background: rgba(88, 88, 88, 0.5);
+    padding: 30px;
     border-radius: 5px;
+    text-align: right;
     
 }
 #create-recipe-form{
@@ -183,7 +196,7 @@ footer p {
     text-align: center;
     display:none;
     padding: 20px;
-    width: 50%;
+    width: 30%;
 }
 
 

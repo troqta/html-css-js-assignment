@@ -45,6 +45,7 @@ $(document).ready(function () {
             else{
                 $('#guest-message').removeClass('hidden');
             }
+            $('#author-box').val('');
         });
          
     });
